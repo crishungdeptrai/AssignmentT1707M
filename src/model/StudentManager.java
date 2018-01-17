@@ -130,6 +130,8 @@ public class StudentManager {
                     databaseConnection.preparedStatementSetString(7, student.getRollNumber());
                     databaseConnection.executePreparedStatement();
                     System.out.println("Update success student have roll number = " + student.getRollNumber());
+                    System.out.println("Do you want update again");
+                    break;
                 case "n":
                 case "N":
                     exit = true;
