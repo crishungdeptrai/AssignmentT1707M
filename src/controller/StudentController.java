@@ -99,6 +99,7 @@ public class StudentController {
                 System.out.format("%10d | ", student.getUpdatedAt());
                 System.out.format("%10d%n", student.getStatus());
             }
+            System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
         }
     }
 

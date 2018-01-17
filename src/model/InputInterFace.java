@@ -132,7 +132,7 @@ public class InputInterFace {
         }
     }
 
-
+    //input phone number + validate
     public String inputPhone() {
         String phone;
         while (true) {
@@ -148,6 +148,7 @@ public class InputInterFace {
 
     }
 
+    //input address
     public String inputAddress() {
         System.out.println("Please enter address's student");
         return scanner.nextLine();
