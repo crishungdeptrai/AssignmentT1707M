@@ -1,4 +1,4 @@
-package MainThread;
+package main;
 
 import controller.StudentController;
 
@@ -6,7 +6,7 @@ import model.StudentManager;
 
 import java.util.Scanner;
 
-public class Main {
+public class MainThread {
     public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         String choose = null;
