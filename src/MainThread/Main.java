@@ -1,4 +1,4 @@
-package main;
+package MainThread;
 
 import controller.StudentController;
 
