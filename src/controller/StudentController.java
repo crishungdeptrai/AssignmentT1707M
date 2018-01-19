@@ -12,7 +12,7 @@ public class StudentController {
 
     // show student by id
     // return student
-    public Students showStudentById() {
+    public void showStudentById() {
         Students student = studentManager.getStudentById();
         System.out.println("Information of student have id = " + student.getId());
         System.out.format("%5s | ", "Id");
@@ -37,12 +37,11 @@ public class StudentController {
         System.out.format("%10d | ", student.getUpdatedAt());
         System.out.format("%10d%n", student.getStatus());
         System.out.println("=======================================================================================================================================================================================================");
-        return student;
     }
 
     // show student by roll number
     // return student
-    public Students showStudentByRollNumber() {
+    public void showStudentByRollNumber() {
         Students student = studentManager.getStudentByRollNumber();
         System.out.println("Information of student have roll number = " + student.getRollNumber());
         System.out.format("%5s | ", "Id");
@@ -67,7 +66,6 @@ public class StudentController {
         System.out.format("%10d | ", student.getUpdatedAt());
         System.out.format("%10d%n", student.getStatus());
         System.out.println("=======================================================================================================================================================================================================");
-        return student;
     }
 
     // show list student

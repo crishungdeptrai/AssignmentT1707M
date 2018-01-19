@@ -106,8 +106,30 @@ public class StudentManager {
 
     //update student by id
     public void updateStudentByRollNumber(){
-        StudentController studentController = new StudentController();
-        Students student = studentController.showStudentByRollNumber();
+        Students student = getStudentByRollNumber();
+        System.out.println("Information of student have roll number = " + student.getRollNumber());
+        System.out.format("%5s | ", "Id");
+        System.out.format("%15s | ", "Roll Number");
+        System.out.format("%25s | ", "Name");
+        System.out.format("%15s | ", "Birthday");
+        System.out.format("%30s | ", "Email");
+        System.out.format("%20s | ", "Phone");
+        System.out.format("%20s | ", "Address");
+        System.out.format("%13s | ", "Created At");
+        System.out.format("%13s | ", "Update At");
+        System.out.format("%10s%n", "Status");
+        System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.format("%5d | ", student.getId());
+        System.out.format("%15s | ", student.getRollNumber());
+        System.out.format("%25s | ", student.getName());
+        System.out.format("%15d | ", student.getBirthday());
+        System.out.format("%30s | ", student.getEmail());
+        System.out.format("%20s | ", student.getPhone());
+        System.out.format("%20s | ", student.getAddress());
+        System.out.format("%10d | ", student.getCreatedAt());
+        System.out.format("%10d | ", student.getUpdatedAt());
+        System.out.format("%10d%n", student.getStatus());
+        System.out.println("=======================================================================================================================================================================================================");
         Scanner scanner = new Scanner(System.in);
         String yesNo = null;
         boolean exit = false;
@@ -148,8 +170,30 @@ public class StudentManager {
 
     //delete student by id (Deleted student will move status = 1 )
     public void deleteStudentById() {
-        StudentController studentController = new StudentController();
-        Students student = studentController.showStudentById();
+        Students student = getStudentById();
+        System.out.println("Information of student have id = " + student.getId());
+        System.out.format("%5s | ", "Id");
+        System.out.format("%15s | ", "Roll Number");
+        System.out.format("%25s | ", "Name");
+        System.out.format("%15s | ", "Birthday");
+        System.out.format("%30s | ", "Email");
+        System.out.format("%20s | ", "Phone");
+        System.out.format("%20s | ", "Address");
+        System.out.format("%13s | ", "Created At");
+        System.out.format("%13s | ", "Update At");
+        System.out.format("%10s%n", "Status");
+        System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.format("%5d | ", student.getId());
+        System.out.format("%15s | ", student.getRollNumber());
+        System.out.format("%25s | ", student.getName());
+        System.out.format("%15d | ", student.getBirthday());
+        System.out.format("%30s | ", student.getEmail());
+        System.out.format("%20s | ", student.getPhone());
+        System.out.format("%20s | ", student.getAddress());
+        System.out.format("%10d | ", student.getCreatedAt());
+        System.out.format("%10d | ", student.getUpdatedAt());
+        System.out.format("%10d%n", student.getStatus());
+        System.out.println("=======================================================================================================================================================================================================");
         Scanner scanner = new Scanner(System.in);
         String yesNo = null;
         boolean exit = false;
